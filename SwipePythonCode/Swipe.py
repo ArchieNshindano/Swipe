@@ -50,6 +50,7 @@ class BluetoothApp:
 
         self.status_label = Label(self.root, text="", font=("Helvetica", 14), bg="white")
         self.status_label.pack(pady=10)
+        self.status_label.config(text=f"Check if bluetooth is On")
 
 
         # Create a style object
