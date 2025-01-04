@@ -118,7 +118,7 @@ class MainActivity : ComponentActivity() {
                 floatingActionButton = {
 
 
-                   if( !state.isConnected || !state.isConnecting)
+                   if( !state.isConnected)
                     FloatingActionButton(
 
                     onClick = { viewModel.startScan() },
