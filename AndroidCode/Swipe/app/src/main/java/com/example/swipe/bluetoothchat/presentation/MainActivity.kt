@@ -179,10 +179,7 @@ class MainActivity : ComponentActivity() {
 
         when(Build.VERSION.SDK_INT >= 33) {
             true -> {
-                if (bluetoothAdapter?.isEnabled == true) {
-                    val enableBtIntent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
-                    ActivityCompat.startActivityForResult(this, enableBtIntent, 1, null)
-                }
+               
             }
             false -> {
                 bluetoothAdapter?.disable()
